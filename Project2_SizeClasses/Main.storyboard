@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SQK-Dw-f1j">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Jon Snow View Controller-->
+        <scene sceneID="SPQ-sE-W9P">
+            <objects>
+                <viewController id="SQK-Dw-f1j" customClass="JonSnowViewController" customModule="Project2_SizeClasses" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ag7-rK-sNr"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jow-Ir-YaG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j6R-eV-vyk">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jonsnow" translatesAutoresizingMaskIntoConstraints="NO" id="umV-3M-PQx">
+                                <rect key="frame" x="20" y="95" width="300" height="229"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="umV-3M-PQx" secondAttribute="height" multiplier="17:13" id="Qwe-rr-NiJ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ak-kh-gzs">
+                                <rect key="frame" x="0.0" y="40" width="667" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="s4z-C2-5lr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vMN-H4-8Fs" userLabel="TextContainer">
+                                <rect key="frame" x="347" y="95" width="300" height="260"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jon Snow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MXr-U5-7tm">
+                                        <rect key="frame" x="0.0" y="5" width="300" height="37"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lord Commander of the Night's Watch" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41n-y1-iGP">
+                                        <rect key="frame" x="0.0" y="52" width="300.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="41n-y1-iGP" secondAttribute="trailing" id="39W-xR-qoA"/>
+                                    <constraint firstItem="MXr-U5-7tm" firstAttribute="leading" secondItem="vMN-H4-8Fs" secondAttribute="leading" id="OyI-zD-86U"/>
+                                    <constraint firstItem="41n-y1-iGP" firstAttribute="top" secondItem="MXr-U5-7tm" secondAttribute="bottom" constant="10" id="kZc-MS-s5A"/>
+                                    <constraint firstItem="41n-y1-iGP" firstAttribute="leading" secondItem="vMN-H4-8Fs" secondAttribute="leading" id="lSO-Vd-DA8"/>
+                                    <constraint firstAttribute="trailing" secondItem="MXr-U5-7tm" secondAttribute="trailing" id="u7E-pC-P20"/>
+                                    <constraint firstItem="MXr-U5-7tm" firstAttribute="top" secondItem="vMN-H4-8Fs" secondAttribute="top" constant="5" id="vWj-HY-8KH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="umV-3M-PQx" firstAttribute="top" secondItem="7ak-kh-gzs" secondAttribute="bottom" constant="10" id="2QL-5i-a4V"/>
+                            <constraint firstItem="vMN-H4-8Fs" firstAttribute="leading" secondItem="j6R-eV-vyk" secondAttribute="leading" constant="20" id="3lc-t1-mZY"/>
+                            <constraint firstAttribute="trailing" secondItem="7ak-kh-gzs" secondAttribute="trailing" id="7Di-8r-jjt"/>
+                            <constraint firstItem="vMN-H4-8Fs" firstAttribute="width" secondItem="umV-3M-PQx" secondAttribute="width" id="8IV-78-TN4"/>
+                            <constraint firstItem="Jow-Ir-YaG" firstAttribute="top" secondItem="vMN-H4-8Fs" secondAttribute="bottom" constant="20" id="DvF-ZI-mLZ"/>
+                            <constraint firstItem="7ak-kh-gzs" firstAttribute="top" secondItem="Ag7-rK-sNr" secondAttribute="bottom" constant="20" id="I77-0x-YjV"/>
+                            <constraint firstAttribute="trailing" secondItem="umV-3M-PQx" secondAttribute="trailing" constant="20" id="KVb-UO-lGe"/>
+                            <constraint firstAttribute="bottom" secondItem="vMN-H4-8Fs" secondAttribute="bottom" constant="20" id="P7u-ft-NAh"/>
+                            <constraint firstItem="vMN-H4-8Fs" firstAttribute="top" secondItem="umV-3M-PQx" secondAttribute="top" id="PaK-cb-6qx"/>
+                            <constraint firstItem="vMN-H4-8Fs" firstAttribute="top" secondItem="umV-3M-PQx" secondAttribute="bottom" constant="30" id="Ssi-DW-Rbs"/>
+                            <constraint firstItem="vMN-H4-8Fs" firstAttribute="top" secondItem="umV-3M-PQx" secondAttribute="top" id="bdC-fB-YgB"/>
+                            <constraint firstItem="vMN-H4-8Fs" firstAttribute="leading" secondItem="umV-3M-PQx" secondAttribute="trailing" constant="20" id="cIB-SP-tSQ"/>
+                            <constraint firstAttribute="trailing" secondItem="vMN-H4-8Fs" secondAttribute="trailing" constant="20" id="e8a-Wd-SHu"/>
+                            <constraint firstItem="7ak-kh-gzs" firstAttribute="leading" secondItem="j6R-eV-vyk" secondAttribute="leading" id="lF7-GK-oJ7"/>
+                            <constraint firstItem="vMN-H4-8Fs" firstAttribute="leading" secondItem="umV-3M-PQx" secondAttribute="trailing" constant="27" id="n0C-kw-jib"/>
+                            <constraint firstItem="umV-3M-PQx" firstAttribute="leading" secondItem="j6R-eV-vyk" secondAttribute="leading" constant="20" id="qFj-i3-PZh"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="KVb-UO-lGe"/>
+                                <exclude reference="3lc-t1-mZY"/>
+                                <exclude reference="PaK-cb-6qx"/>
+                                <exclude reference="Ssi-DW-Rbs"/>
+                                <exclude reference="bdC-fB-YgB"/>
+                                <exclude reference="cIB-SP-tSQ"/>
+                                <exclude reference="n0C-kw-jib"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="Ssi-DW-Rbs"/>
+                                <include reference="bdC-fB-YgB"/>
+                                <include reference="n0C-kw-jib"/>
+                                <exclude reference="DvF-ZI-mLZ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="3lc-t1-mZY"/>
+                                <exclude reference="Ssi-DW-Rbs"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="KVb-UO-lGe"/>
+                                <include reference="Ssi-DW-Rbs"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="3lc-t1-mZY"/>
+                                <include reference="PaK-cb-6qx"/>
+                                <include reference="cIB-SP-tSQ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IDv-eE-pOk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2199" y="-340"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="jonsnow" width="1024" height="768"/>
+    </resources>
+</document>
